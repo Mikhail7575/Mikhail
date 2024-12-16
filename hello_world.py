@@ -25,7 +25,7 @@ print(bl,rm)
 
 jkl = input()
 prk = input()
-print(jkl + prk)
+print(jkl + " " + prk)
 
 dfg = int(input())
 krg = input()
