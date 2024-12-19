@@ -29,7 +29,7 @@ print(a + " " + b)
 
 a = int(input())
 b = input()
-print(a + int(b))
+print(a + int(b))    
 
 
 
