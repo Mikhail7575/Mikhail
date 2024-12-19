@@ -2,34 +2,34 @@ a = int(input())
 b = int(input())
 print(a + b)
 
-c = int(input())
+a = int(input())
 
-d = int(input())
-e = int(input())
-print(d - e)
+a = int(input())
+b = int(input())
+print(a - b)
 
-m = float(int(input()))
-k = float(int(input()))
-print(m * k)
-print(m / k)
+a = float(int(input()))
+b = float(int(input()))
+print(a * b)
+print(a / b)
 
-lm = input()
-print(lm) 
+a = input()
+print(a) 
 
-bl = input()
-rm = input()
-bl == True
-rm == False
-print(bl,rm)
+a = input()
+b = input()
+a == True
+b == False
+print(a,b)
 
 
-jkl = input()
-prk = input()
-print(jkl + " " + prk)
+a = input()
+b = input()
+print(a + " " + b)
 
-dfg = int(input())
-krg = input()
-print(dfk + int(krg))
+a = int(input())
+b = input()
+print(a + int(b))
 
 
 
