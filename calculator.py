@@ -9,7 +9,7 @@ elif operation == '-':
 elif operation == '*':
     print(a * b)
 else:
-    if a == 0 or b == 0:
+    if b == 0:
         print('Такой операции нет')
     else:
         print(a / b)     
