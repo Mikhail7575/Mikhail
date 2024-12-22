@@ -19,3 +19,23 @@ elif len(word_1) < len(word_2):
     print('Первое слово короче чем второе')
 else:
     print('Первое слово длиннее чем второе')
+
+
+# 3  Бросок кубика
+
+import random
+
+a = input('Здравствуйте! Как вас зовут? ')
+print('Ok ',a,' бросайте кубик... ')
+
+brosok = int(input())
+
+computer =random.randint(1,6)
+
+if brosok > computer:
+    print(a, 'Вы выйграли')
+elif brosok < computer:
+    print(a, 'Вы проиграли')
+else:
+    print('Ничья', a)
+    
