@@ -8,9 +8,8 @@ elif operation == '-':
     print(a - b)
 elif operation == '*':
     print(a * b)
+elif operation == '/' and b == 0:
+    print('Такой операции нет')    
 else:
-    if b == 0:
-        print('Такой операции нет')
-    else:
-        print(a / b)     
+    print(a / b)     
     
