@@ -90,3 +90,15 @@ elif x < 0 and y == 0:
     print('Точка находится на оси -x')
 else:
     print('Точка находится в 4-й четверти ')
+
+
+parol = 'Lemmy'
+
+while True:
+    a = input('Введите пароль ')
+    if parol == not(a):
+        print('Пароль не верный')
+    else:
+        print('Вход выполнен') 
+
+
