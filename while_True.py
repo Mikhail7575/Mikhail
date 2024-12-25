@@ -31,3 +31,15 @@ for i in range(1,16):
 n = int(input())
 for i in range(0, n, 2):
     print(n + i)    
+
+
+#5
+
+summa = 0
+rezultat = 0
+n = int(input('Введите число '))
+while summa < n:
+    summa += 3
+    rezultat = rezultat + summa
+print(rezultat)
+
