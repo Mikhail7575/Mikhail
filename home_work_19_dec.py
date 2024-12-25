@@ -8,6 +8,20 @@ random_el = random.choice(b)
 
 print(random_el)
 
+# Нужный вариант
+
+import random
+
+name = input()
+
+a = random.randint(0, 2)
+
+if a == 0:
+    print(name.upper())
+if a == 1:
+    print(name.lower())
+
+    
 # 2  Длинна слов. 
 
 word_1 = input('Введите 1-е слово ')
