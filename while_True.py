@@ -66,7 +66,15 @@ while b < n:
     b += 1
     factorial = factorial * b
 print(f"Факториал числа {n} = {factorial}")
-    
 
-        
+
+
+
+#8 Сам бы тоже не решил.
+
+string = input('Введите строку ')
+result = ''
+for i in range(len(string) -1, -1, -1):
+    result += string[i]
+print(result)        
     
