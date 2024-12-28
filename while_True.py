@@ -43,3 +43,17 @@ while summa < n:
     result = result + summa
 print(result)
 
+#6 Я бы сам никогда не додумался-загуглил!
+# Но все равно не понимаю!
+
+n = int(input('Введите число '))
+k = 0
+for i in range(2, n // 2 + 1 ):
+    if n % i == 0:
+        k = k + 1
+if k <= 0:        
+    print('Число простое')
+else:
+    print('Число сложное')
+        
+    
