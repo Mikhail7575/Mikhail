@@ -56,4 +56,17 @@ if k <= 0:
 else:
     print('Число сложное')
         
+
+#7 факториал числа
+
+n = int(input())
+factorial = 1
+b = 0
+while b < n:
+    b += 1
+    factorial = factorial * b
+print(f"Факториал числа {n} = {factorial}")
+    
+
+        
     
