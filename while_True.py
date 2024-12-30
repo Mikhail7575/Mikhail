@@ -78,4 +78,30 @@ result = ''
 for i in range(len(string) -1, -1, -1):
     result += string[i]
 print(result)        
-    
+
+
+#9 угадать число
+
+import random
+
+a = random.randint(1, 101)
+
+#print(a) # Проверял как работает программа
+
+guest = int(input('Введите число '))
+
+for i in range(1,11):
+    if guest == (a + i) or guest == (a - i):
+        print('Горячо!')
+    else:
+        pass
+if guest > (a + 11):
+    print('Ваше число больше')
+elif guest < (a - 11):
+    print('Ваше число меньше')
+elif guest == a:
+    print('Вы выйграли')
+else:
+    pass
+
+ 
