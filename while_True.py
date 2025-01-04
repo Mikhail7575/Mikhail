@@ -13,7 +13,7 @@ total = 0
 
 for i in range(1,101):
     total += i
-print(total)
+print(f"Сумма чисел от 1 до 100: {total}")
 
 #2 Вывод символов строки
 
@@ -23,10 +23,12 @@ for i in string:
  
  
 #3 Таблица умножения
-number = int(input())
 
+number = int(input())
+a = 0 
 for i in range(1,11):
-    print(i * number)
+    a = number * i
+    print(f"{number} x {i} = {a}")
 
 
 #4 Сумма четных чисел
@@ -93,7 +95,7 @@ import random
 
 a = random.randint(1, 101)
 
-#print(a) # Проверял как работает программа
+#print(a) Проверял как работает программа
 
 guest = int(input('Введите число '))
 
