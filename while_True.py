@@ -45,7 +45,7 @@ n = int(input('Введите число '))
 while summa < n:
     summa += 3
     result = result + summa
-print(result)
+print(f"Сумма чисел, кратных 3, от 1 до {n} = {result}")
 
 #6 Простое число
 # Я бы сам никогда не додумался-загуглил!
@@ -64,7 +64,7 @@ else:
 
 #7 факториал числа
 
-n = int(input())
+n = int(input('Введите число '))
 factorial = 1
 b = 0
 while b < n:
