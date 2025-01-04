@@ -9,31 +9,35 @@ while True:
 
 total = 0
 
-#1
-
+#1 Сумма чисел от 1 до 100
 for i in range(1,101):
     total += i
 print(total)
 
-#2
+#2 Вывод символов строки
 
 string = input()
 for i in string:
     print(i)
-
-#3
+ 
+ 
+#3 Таблица умножения
 number = int(input())
 
-for i in range(1,16):
+for i in range(1,11):
     print(i * number)
 
-#4
+
+#4 Сумма четных чисел
+
 n = int(input())
-for i in range(0, n, 2):
-    print(n + i)    
+a = 0
+for i in range(0, n+1, 2):
+    a = a + i
+print(f"Сумма четных чисел от {1} до {n} = {a}") 
 
 
-#5
+#5 Сумма чисел кратных 3
 
 summa = 0
 result = 0
@@ -43,7 +47,8 @@ while summa < n:
     result = result + summa
 print(result)
 
-#6 Я бы сам никогда не додумался-загуглил!
+#6 Простое число
+# Я бы сам никогда не додумался-загуглил!
 # Но все равно не понимаю!
 
 n = int(input('Введите число '))
@@ -70,7 +75,8 @@ print(f"Факториал числа {n} = {factorial}")
 
 
 
-#8 Сам бы тоже не решил. 
+#8 Перевернуть строку 
+# Сам бы тоже не решил. 
 # Тоже не понимаю...Зачем например в range 3-й  (-1) ?
 
 string = input('Введите строку ')
