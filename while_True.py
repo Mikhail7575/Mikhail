@@ -3,13 +3,14 @@ parol = 'Lemmy'
 while True:
     a = input(' enter password ')
     if parol == a:
-
-    print('password is true')
+        print('password is true')
         break
+
+
+#1 Сумма чисел от 1 до 100
 
 total = 0
 
-#1 Сумма чисел от 1 до 100
 for i in range(1,101):
     total += i
 print(total)
