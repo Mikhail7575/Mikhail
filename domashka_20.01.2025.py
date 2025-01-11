@@ -49,3 +49,17 @@ for i in range(8):
     a = random.choice(letters)
     password += a
 print(password)
+
+
+# 6. Разделить числа на два списка четные и не четные
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = []
+not_even_numbers = []
+for i in numbers:
+    if i % 2 == 0:
+        even_numbers.append(i)
+    else:
+        not_even_numbers.append(i)
+print(even_numbers)
+print(not_even_numbers)
