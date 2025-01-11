@@ -80,3 +80,22 @@ for i in text:
     if i.isdigit():
         chapter_number += i
         print(f'Книга: {book_title}, Глава: {chapter_number}')
+
+
+# 8. Выбирите случайное прздравление из списка,не включая те,которые
+# содержат слово "скучный".
+
+
+greetings = ["C днем рождения!", "С новым годом!",
+             "Желаю успехов!", "Скучный текст"]
+a = "Скучный"
+new_greetings = []
+
+for i in greetings:
+    if a not in i:
+        new_greetings.append(i)
+    else:
+        pass
+for i in range(1):
+    b = random.choice(new_greetings)
+print(b)
