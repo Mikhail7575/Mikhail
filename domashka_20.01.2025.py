@@ -75,7 +75,8 @@ for i in text:
     book_title += i
     if i == "-":
         break
+book_title = book_title.rstrip('-')
 for i in text:
     if i.isdigit():
         chapter_number += i
-        print(f'Книга {book_title} Глава : {chapter_number}')
+        print(f'Книга: {book_title}, Глава: {chapter_number}')
