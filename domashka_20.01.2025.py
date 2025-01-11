@@ -28,3 +28,13 @@ for i in range(3):
     b = random.choice(ingredients)
     new_recept.append(b)
 print(new_recept)
+
+
+# 4. Поменять местами имя и фамилию в каждом кортеже.
+
+names = [("Иванов", "Иван"), ("Петров", "Петров"), ("Сидоров", "Сидор")]
+new_names = []
+for i in names:
+    a = i[::-1]
+    new_names.append(a)
+print(new_names)
