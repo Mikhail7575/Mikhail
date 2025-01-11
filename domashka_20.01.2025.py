@@ -43,7 +43,6 @@ print(new_names)
 
 # 5. Сгенерируйте пароль из случайного набора символов длинной 8.
 
-
 letters = "abcdefghijklmnopqrwxvzABCDEFJHIJKLNMOPQRWXVZ0123456789"
 password = ""
 for i in range(8):
