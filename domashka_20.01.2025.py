@@ -1,5 +1,5 @@
 # 1. Дано число n. Создайте список от n до 0.
-'''
+
 import random
 
 n = int(input())
@@ -99,7 +99,7 @@ for i in greetings:
 for i in range(1):
     b = random.choice(new_greetings)
 print(b)
-'''
+
 
 # 9. Замените все не приличные слова в тексте звездочками.
 
