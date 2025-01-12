@@ -118,3 +118,13 @@ for i in text:
         new_text.append(i)
 new_text = ' '.join(new_text)
 print(new_text)
+
+
+# 10. Удалите все повторяющиеся слова из списка,сохранив их порядок.
+
+words = ["яблоко", "банан", "яблоко", "груша", "банан", "слива"]
+new_list = []
+for i in words:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)
