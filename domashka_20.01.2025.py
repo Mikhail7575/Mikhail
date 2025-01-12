@@ -1,5 +1,5 @@
 # 1. Дано число n. Создайте список от n до 0.
-
+'''
 import random
 
 n = int(input())
@@ -99,3 +99,22 @@ for i in greetings:
 for i in range(1):
     b = random.choice(new_greetings)
 print(b)
+'''
+
+# 9. Замените все не приличные слова в тексте звездочками.
+
+text = "Эта программа такая тупая! Вот блин!"
+new_text = []
+a = 'тупая!'
+b = 'блин!'
+text = text.split(' ')
+for i in text:
+    new_text.append(i)
+    if i == a or i == b:
+        new_text.remove(i)
+        i = i.rstrip('!')
+        i = ('*' * len(i))
+        i += '!'
+        new_text.append(i)
+new_text = ' '.join(new_text)
+print(new_text)
