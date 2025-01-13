@@ -25,7 +25,7 @@ print(pushistos_dinozaurs)
 
 
 # 3. Случайнр выбирает три ингредиента для нового рецепта
-
+# import random
 
 ingredients = ["сыр", "яйца", "помидоры", "курица", "рыба", "грибы", "лук"]
 new_recept = []
@@ -46,7 +46,7 @@ print(new_names)
 
 
 # 5. Сгенерируйте пароль из случайного набора символов длинной 8.
-
+# import random
 letters = "abcdefghijklmnopqrwxvzABCDEFJHIJKLNMOPQRWXVZ0123456789"
 password = ""
 for i in range(8):
