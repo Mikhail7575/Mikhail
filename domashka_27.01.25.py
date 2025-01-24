@@ -5,8 +5,11 @@ print(f"Сумма чисел от 1 до 100: {total}")
 '''
 
 # 2 Вывод символов строки
-
-
+'''
 string = input()
 for i in string:
     print(i)
+'''
+
+lst = ['a', 'b', 'c', 'd', 'e']
+print(lst.count('a'))
