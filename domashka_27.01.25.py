@@ -42,4 +42,27 @@ if a == ''.join(b):
 else:
     print('Это не полиндром')
 
-	'''
+	
+
+#  Дано число n. Создайте список от n до 0.
+
+import random
+
+n = int(input())
+new_list = []
+new_list = [i for i in range(n, -1, -1)]
+    
+print(new_list)
+
+
+
+#  Добавить слово "пушистый" к каждому имени.
+
+dinozaurs = ["Ти-рекс", "Трицератопс", "Велоцираптор", "Брахиозавр"]
+
+a = "Пушистый "
+pushistos_dinozaurs = ["Пушистый " + i for i in dinozaurs]
+
+print(pushistos_dinozaurs)
+
+'''
