@@ -107,4 +107,18 @@ print(even_numbers)
 not_even_numbers = [i for i in numbers if i % 2 != 0]    
 print(not_even_numbers)
 
+
+#  Разделите строку,содержащую книгу главу,на отдельные части:
+# название книги и номер главы.
+
+text = "Гарри Поттер и Тайная комната - Глава 2"
+book_title = ""
+chapter_number = ""
+book_title = ''.join([i for i in text])
+if '-' in book_title:
+    book_title = book_title[:book_title.index('-')+1]
+
+chapter_number = ''.join([i for i in text if i.isdigit()])
+print(f'Книга: {book_title} Глава: {chapter_number}')
+
 '''
