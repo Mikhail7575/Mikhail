@@ -4,21 +4,10 @@ total = sum(i for i in range(1, 101))
 print(f"Сумма чисел от 1 до 100: {total}")
 
 
-# 2 Вывод символов строки
+# Вывод символов строки
 
 
 [print(i) for i in input("Введите строку ")]
-
-
-
-#  Таблица умножения: Не нашел способа 
-
-number = int(input())
-a = 0
-for i in range(1, 11):
-    a = number * i
-
-    print(f"{number} x {i} = {a}")
 
 
 
@@ -120,5 +109,31 @@ if '-' in book_title:
 
 chapter_number = ''.join([i for i in text if i.isdigit()])
 print(f'Книга: {book_title} Глава: {chapter_number}')
+
+
+# 8. Выбирите случайное прздравление из списка,не включая те,которые
+# содержат слово "скучный".
+
+import random
+
+greetings = ["C днем рождения!", "Сновым годом!",
+             "Желаю успехов!", "Скучный текст"]
+
+a = "Скучный"
+new_greetings = []
+
+new_greetings = [i for i in greetings if a not in i]
+
+print([random.choice(new_greetings)for i in range(1)])
+
+
+
+# Сгенерируйте пароль из случайного набора символов длинной 8.
+#import random
+letters = "abcdefghijklmnopqrwxvzABCDEFJHIJKLNMOPQRWXVZ0123456789"
+password = []
+password = [random.choice(letters) for i in range(8)]
+    
+print(''.join(password))
 
 '''
