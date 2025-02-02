@@ -132,4 +132,26 @@ participants = [
 adults = filter(lambda x: x["age"] >= 18, participants)
 print(list(adults))
 # Ожидаемый результат: [{"name": "Bob", "age": 20}, {"name": "Diana", "age": 22}]
+
+
+
+# 9. Генерация строк описания товаров через map
+# Создайте список строк описания для каждого товара вида: "Товар: , Цена: ".
+# Задача
+products = [
+    {"name": "Laptop", "price": 1000},
+    {"name": "Shirt", "price": 50},
+    {"name": "Phone", "price": 600},
+]
+
+
+def format_product(product):
+    product["Товар"] = product.pop("name")
+    product["Цена"] = product.pop("price")
+    return product
+
+
+descriptions = map(format_product, products)  # Используйте map
+print(list(descriptions))
+# Ожидаемый результат: ["Товар: Laptop, Цена: 1000", "Товар: Shirt, Цена: 50", "Товар: Phone, Цена: 600"]
 '''
