@@ -38,13 +38,31 @@ print(base_price)   # Ожидаемый результат: 100
 # 3. Применение налогов через map
 # Список цен товаров. Напишите функцию, которая добавляет к каждому товару налог 20%, и примените её с помощью map.
 # Задача
+
+'''
+
 prices = [100, 200, 300, 400]
 
 
 def apply_tax(price):
     return price + price * 20 / 100  # Верните цену с налогом 20%
-    pass
 
 
 final_prices = list(map(apply_tax, prices))
 print(final_prices)
+
+
+
+prices = [50, 120, 180, 300, 75]
+
+# Используйте filter, чтобы отобрать только товары дороже 150
+
+
+def more_150(x):
+    return x > 150
+
+
+expensive_items = filter(more_150, prices)
+print(list(expensive_items))  # Ожидаемый результат: [180, 300]
+
+'''
