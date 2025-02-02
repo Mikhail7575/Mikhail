@@ -98,4 +98,19 @@ products = [
 high_rating_products = filter(lambda x: x["rating"] > 4, products)
 print(list(high_rating_products))
 # Ожидаемый результат: [{"name": "Laptop", "rating": 4.5}, {"name": "Phone", "rating": 4.2}]
+
+
+#7. Перевод в рубли через map
+#Есть список цен в долларах. Напишите функцию, которая переводит их в рубли
+#(курс 1 USD = 75 RUB), и примените через map.
+# Задача
+
+prices_usd = [10, 20, 30, 40]
+
+def to_rub(price):
+    price *= 75# Переведите цену в рубли
+    return(price)
+
+prices_rub = map(to_rub, prices_usd)   # Используйте map для преобразования
+print(list(prices_rub))  # Ожидаемый результат: [750, 1500, 2250, 3000]
 '''
