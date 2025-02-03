@@ -154,4 +154,20 @@ def format_product(product):
 descriptions = map(format_product, products)  # Используйте map
 print(list(descriptions))
 # Ожидаемый результат: ["Товар: Laptop, Цена: 1000", "Товар: Shirt, Цена: 50", "Товар: Phone, Цена: 600"]
+
+
+
+# 10. Фильтр по ключевому слову в названии
+# Дан список товаров. Оставьте только те, у которых в названии есть ключевое слово "Phone".
+# Задача
+products = [
+    {"name": "Laptop", "price": 1000},
+    {"name": "Phone Case", "price": 30},
+    {"name": "Phone", "price": 600},
+]
+
+# Используйте filter, чтобы оставить только товары с "Phone" в названии
+phones = filter(lambda x: 'Phone' in x['name'], products)
+print(list(phones))
+
 '''
