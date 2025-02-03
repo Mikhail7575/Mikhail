@@ -218,4 +218,20 @@ greet_people("Alice", "Bob", "Charlie")
 # Привет, Bob!
 # Привет, Charlie!
 
+
+
+# 14. Создание словаря из ключей и значений (**kwargs)
+# Напишите функцию, которая принимает произвольное количество именованных аргументов и возвращает их в виде словаря.
+# Задача
+
+
+def create_dict(**kwargs):
+    kwargs = dict(kwargs)
+    return kwargs                  # Верните kwargs как словарь
+
+
+result = create_dict(name="Alice", age=25, city="New York")
+# Ожидаемый результат: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+print(result)
+
 '''
