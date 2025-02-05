@@ -2,7 +2,7 @@
 # 2. Создать подкласс Mammal: warm_blood = True; display_info и Bird: can_fly = True; display_info
 # 3. Создать класс Zoo: animals = []; add_animal, show_all_animals
 
-class animal:
+class Animal:
     def __init__(self, name, species):
         self.name = name
         self.species = species
@@ -11,14 +11,14 @@ class animal:
         print(f"{self.name} - {self.species}")
 
 
-class Mammal(animal):
+class Mammal(Animal):
     def __init__(self, name, species):
-		super().__init__(name, species)
+	    super().__init__(name, species)
         self.warm_blood = warm_blood    
     
 	def display_info_(self):
-         print(f"{self.name} - {self.species} warm_blood = {self.warm_blood} ")
+        print(f"{self.name} - {self.species} warm_blood = True")
          
 class Zoo(animal):
      def __init__(self, name, species):
-		  super().__init__(name, species)		 
+		super().__init__(name, species)		 
